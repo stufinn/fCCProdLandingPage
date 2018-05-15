@@ -49,21 +49,93 @@ table {
 
 /* END OF CSS RESET */
 
-nav {
+body {
+    background: yellow;     /* TEMP */
+    height: 200vh;          /* TEMP */
+    box-sizing: border-box;
+}
+
+
+#top-spacer,
+#nav-bar {
+    min-height: 10vh;
+    width: 100%;
+}
+
+#nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 15vh;
     align-items: center;
-    /* align-items: space-between; */
+    position: fixed;
+    background: white;
 }
 
-nav ul {
+#nav-links {
+
+}
+
+    /* nav ul li {
+        padding: 0 5px;
+    } */
+
+#icon-title {
     display: flex;
     flex-direction: row;
-    align-items: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li {
-    padding: 0 5px;
+#product-title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 4vmin;
 }
+
+#header-img {
+    height: 6vmin;
+    padding: 0 20px;
+}
+
+.nav-link {
+    border: solid 1px black;
+    /* display: inline-block;
+    vertical-align: bottom; */
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* border: solid 1px black;
+    margin: 0 5px; */
+    
+    /* height: 20px; */
+    /* padding: 3px; */
+}
+
+a {
+    text-decoration: none;
+    /* line-height: 20px;  same as parent container height */
+    color: black;
+    /* width: 100%; */
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+a:hover {
+    color: yellow;
+    background: black;  
+}
+.nav-text {
+    /* padding-top:2px; */
+    /* display: inline-block; */
+    /* padding: 0; */
+    /* white-space: pre-wrap; */
+    /* vertical-align: center; */
+    /* padding-top: 5px; */
+}
+
+h1 {
+        /* color: black;
+        font-size: 20px; */
+    padding-top: 30px;
+}
+
