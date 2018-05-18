@@ -67,7 +67,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background: white;
+    background: yellow;
 }
 
 #icon-title {
@@ -116,7 +116,7 @@ a:hover {
 
 #hutzlerPhoto {
     /* display: block; */
-    max-width: 600px;
+    max-width: 385px;
     min-width: 200px;
     width: 50vmax;
     padding-top: 50px;
