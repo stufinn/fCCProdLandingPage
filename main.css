@@ -51,7 +51,6 @@ table {
 
 body {
     background: yellow;     /* TEMP */
-    height: 200vh;          /* TEMP */
     box-sizing: border-box;
 }
 
@@ -70,14 +69,6 @@ body {
     position: fixed;
     background: white;
 }
-
-#nav-links {
-
-}
-
-    /* nav ul li {
-        padding: 0 5px;
-    } */
 
 #icon-title {
     display: flex;
@@ -122,13 +113,13 @@ a:hover {
     color: yellow;
     background: black;  
 }
-.nav-text {
-    /* padding-top:2px; */
-    /* display: inline-block; */
-    /* padding: 0; */
-    /* white-space: pre-wrap; */
-    /* vertical-align: center; */
-    /* padding-top: 5px; */
+
+#hutzlerPhoto {
+    /* display: block; */
+    max-width: 600px;
+    min-width: 200px;
+    width: 50vmax;
+    padding-top: 50px;
 }
 
 h1 {
@@ -139,4 +130,11 @@ h1 {
 
 .pageSection {
     padding-top: 10vh;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
