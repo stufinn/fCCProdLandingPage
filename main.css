@@ -91,6 +91,12 @@ body {
     font-size: 4vmin;
 }
 
+@media (max-width: 600px) {
+    #product-title {
+        display: none;
+    }
+}
+
 #header-img {
     height: 6vmin;
     padding: 0 20px;
@@ -98,16 +104,8 @@ body {
 
 .nav-link {
     border: solid 1px black;
-    /* display: inline-block;
-    vertical-align: bottom; */
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
-    /* border: solid 1px black;
-    margin: 0 5px; */
-    
-    /* height: 20px; */
-    /* padding: 3px; */
+    /* Text in boxes has mystery default  2px of spacing @ bottom */
+    padding: 5px 10px 3px 10px; 
 }
 
 a {
@@ -139,3 +137,6 @@ h1 {
     padding-top: 30px;
 }
 
+.pageSection {
+    padding-top: 10vh;
+}
