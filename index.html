@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Banana Slicer</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar|Montserrat|Rock+Salt" rel="stylesheet"> 
     <script src="https://rawgit.com/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 
 </head>
@@ -15,121 +15,160 @@
         <nav id="nav-bar">
             <div id="icon-title">
                 <img id="header-img" src="https://raw.githubusercontent.com/stufinn/fCCProductLandingPage/master/assets/images/banana_b.png" alt="banana icon" id="bananaLogo">
-                <div id="product-title">Hutzler 571 Banana Slicer</div>
+                <div id="product-title"><a href="#firstPage">Hutzler 571 Banana Slicer</a></div>
             </div>
         
             <nav id="nav-links">
+                <a href="#videoSection" class="nav-link">Video</a>
                 <a href="#features" class="nav-link">Features</a>
-                <a href="#howItWorks" class="nav-link">How It Works</a>
+                <a href="#getInfoSection" class="nav-link">Info</a>
                 <a href="#reviews" class="nav-link">Reviews</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
                 <a href="#faq" class="nav-link">FAQ</a>
-                <a href="#orderNow" class="nav-link">Order Now</a>
+                <!-- <a href="#orderNow" class="nav-link">Order Now</a> -->
             </nav>
 
         </nav>
 
     </header>
 
-        <div id="top-spacer"></div>
+        
 
     <div id="main-content">
 
-        <img id="hutzlerPhoto" src="http://www.hutzlerco.com/files/5412/8527/2557/571.jpg">
+        <div id="firstPage" class="fullScreen">
 
-        <p id="description">This is a description of the Hutzler 571</p>
-        
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/RMZZYYJEuPY" frameborder="0" allow="encrypted-media" allowfullscreen>
-            Sorry your browser does not appear to allow you to view this video.  <a href="https://www.youtube.com/watch?annotation_id=annotation_3957574571&feature=iv&src_vid=1Kz7xGbgSK4&v=RMZZYYJEuPY" target="_blank">View it on YouTube</a>
-        </iframe>
+            <div id="top-spacer"></div>
 
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <h1 id="mainStatement">Slicing bananas will never be the same</h1>
 
-            
-            <label for="name" id="name-label">Name: </label>
-            <input type="text" id="name" placeholder="your name here" required>
+            <img id="hutzlerPhoto" src="http://www.hutzlerco.com/files/5412/8527/2557/571.jpg">
 
-            <label for="email" id="email-label">Email address: </label>
-            <input type="email" name="email" placeholder="email here" id="email" placeholder="your email here" required>
+        </div>
 
-            <div id="erroneousSurveyInfo">
+        <!-- SECTION 2 - THE UNOFFICIAL INFOMERCIAL -->
 
-                <!-- <label for="number" id="number-label">Number of banana slicers to order:</label>
-                <input type="number" id="number" min="0" max="50" placeholder="#">
+        <div id="videoSection" class="fullScreen">
 
-                <label for="dropdown" id="dropdown-label">Color:</label>
-                <select name="dropdownList" id="dropdown">
-                    <option id="option1" selected="selected" value="yellow">Yellow</option>
-                    <option id="option2" value="black">Black</option>
-                    <option id="option3" value="green">Green</option>
-                    <option id="option4" value="blue">Blue</option>
-                </select>
+            <h1 class="sectionTitle">The unofficial infomercial</h1>
 
-                <div id="radioButtons">
+            <div class="videoContainer">
 
-                    <p id="radio-label">Delivery options:</p>
-                    
-                    <input type="radio" name="radio" id="radioButton1" value="regular">
-                    <label for="radioButton1">Regular</label>
-
-                    <input type="radio" name="radio" id="radioButton2" value="express">
-                    <label for="radioButton2">Express</label>
-
-                    <input type="radio" name="radio" id="radioButton3" value="drone">
-                    <label for="radioButton3">Drone delivery</label>
-
-                    <input type="radio" name="radio" id="radioButton4" value="pickup">
-                    <label for="radioButton4">Pickup</label>
-
-                </div>
-
-                <p>What is this purchase for?</p>
-                <div id="checkBoxes">
-
-                    <input type="checkbox" name="checkbox" id="checkbox1" value="gift">
-                    <label for="checkbox1">Gift</label>
-
-
-                    <input type="checkbox" name="checkbox" id="checkbox2" value="slicing">
-                    <label for="checkbox2" id="checkbox2-label">Slicing bananas</label>
-
-                    <input type="checkbox" name="checkbox" id="checkbox3" value="love">
-                    <label for="checkbox3" id="checkbox3-label">Love life aid</label>
-
-                    <input type="checkbox" name="checkbox" id="checkbox4" value="nather-not">
-                    <label for="checkbox4" id="checkbox4-label">Rather not say</label>
-
-                </div>
-                
-                <label for="text">Additional Comments</label>
-                <textarea name="textarea" id="textarea">Additional Comments (e.g. delivery instructions)</textarea> -->
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/RMZZYYJEuPY" frameborder="0" allow="encrypted-media" allowfullscreen>
+                    Sorry your browser does not appear to allow you to view this video.  <a href="https://www.youtube.com/watch?annotation_id=annotation_3957574571&feature=iv&src_vid=1Kz7xGbgSK4&v=RMZZYYJEuPY" target="_blank">View it on YouTube</a>
+                </iframe>
 
             </div>
 
-            <input type="submit" id="submit" value="submit info">
 
-        </form>
-
-        <div id="features" class="pageSection">
-            <p>Features:</p>
-            <ul>
-                <li>Faster, safer than using a knife</li>
-                <li>Great for cereal</li>
-                <li>Plastic, dishwasher safe</li>
-                <li>Slice your banana with one quick motion</li>
-                <li>Kids love slicing their own bananas</li>
-                <li>BPA free</li>
-                <li>Banana slicing has never been easier or more fun! </li>
-            </ul>
         </div>
+
+        <!-- SECTION 3 - FEATURES -->
+
+        <div id="features" class="fullScreen">
+
+            <h1 class="sectionTitle">Features</h1>
+            
+            <div id="featureContainer">  <!-- added to provide padding at sides -->
+                <ul class="banana">
+                    <li>Faster, safer than using a knife</li>
+                    <li>Great for cereal</li>
+                    <li>Plastic, dishwasher safe</li>
+                    <li>Slice your banana with one quick motion</li>
+                    <li>Kids love slicing their own bananas</li>
+                    <li>BPA free</li>
+                    <li>Banana slicing has never been easier or more fun! </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SECTION 4 - Updates -->
+
+        <div id="getInfoSection" class="fullScreen">
+
+            <h1 class="sectionTitle">Interested in product updates?</h1>
+            <p class="sectionDescription">Provide your name and contact information <br>and we'll let you know the scoop (slice?) on great hurtzler deals</p>
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+                <div id="nameContainer" class="inputContainer">
+                    <label for="name" id="name-label">Name: </label>
+                    <input type="text" id="name" placeholder="Banana Fan" required>
+                </div>
+                
+                <div id="emailContainer" class="inputContainer">
+                    <label for="email" id="email-label">Email: </label>
+                    <input type="email" name="email" placeholder="sliced@bananas.com" id="email" placeholder="your email here" required>
+                </div>
+
+                <div id="erroneousSurveyInfo">
+
+                    <!-- <label for="number" id="number-label">Number of banana slicers to order:</label>
+                    <input type="number" id="number" min="0" max="50" placeholder="#">
+
+                    <label for="dropdown" id="dropdown-label">Color:</label>
+                    <select name="dropdownList" id="dropdown">
+                        <option id="option1" selected="selected" value="yellow">Yellow</option>
+                        <option id="option2" value="black">Black</option>
+                        <option id="option3" value="green">Green</option>
+                        <option id="option4" value="blue">Blue</option>
+                    </select>
+
+                    <div id="radioButtons">
+
+                        <p id="radio-label">Delivery options:</p>
+                        
+                        <input type="radio" name="radio" id="radioButton1" value="regular">
+                        <label for="radioButton1">Regular</label>
+
+                        <input type="radio" name="radio" id="radioButton2" value="express">
+                        <label for="radioButton2">Express</label>
+
+                        <input type="radio" name="radio" id="radioButton3" value="drone">
+                        <label for="radioButton3">Drone delivery</label>
+
+                        <input type="radio" name="radio" id="radioButton4" value="pickup">
+                        <label for="radioButton4">Pickup</label>
+
+                    </div>
+
+                    <p>What is this purchase for?</p>
+                    <div id="checkBoxes">
+
+                        <input type="checkbox" name="checkbox" id="checkbox1" value="gift">
+                        <label for="checkbox1">Gift</label>
+
+
+                        <input type="checkbox" name="checkbox" id="checkbox2" value="slicing">
+                        <label for="checkbox2" id="checkbox2-label">Slicing bananas</label>
+
+                        <input type="checkbox" name="checkbox" id="checkbox3" value="love">
+                        <label for="checkbox3" id="checkbox3-label">Love life aid</label>
+
+                        <input type="checkbox" name="checkbox" id="checkbox4" value="nather-not">
+                        <label for="checkbox4" id="checkbox4-label">Rather not say</label>
+
+                    </div>
+                    
+                    <label for="text">Additional Comments</label>
+                    <textarea name="textarea" id="textarea">Additional Comments (e.g. delivery instructions)</textarea> -->
+
+                </div>
+
+                <input type="submit" id="submit" value="submit info">
+
+            </form>
+
+        </div>
+
+        <div id="reviews" class="fullScreen">
+                <p>Reviews</p>
+            </div>
 
         <div id="howItWorks" class="pageSection">
             <p>How it works goes here</p>
         </div>
 
-        <div id="reviews" class="pageSection">
-            <p>Reviews</p>
-        </div>
+
 
         <div id="pricing" class="pageSection">
             <p>Pricing</p>
@@ -142,6 +181,7 @@
         <div id="orderNow" class="pageSection">
             <p><a href="https://www.amazon.ca/Hutzler-571-Banana-Slicer/dp/B0047E0EII">Purchase a Hutzler 571 Banana Slicer from Amazon</a></p>
         </div>
+
     </div>
     
 </body>

@@ -49,11 +49,53 @@ table {
 
 /* END OF CSS RESET */
 
+
+/* GLOBAL STYLES */
+
 body {
     background: yellow;     /* TEMP */
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif, 'Courier New', Courier, monospace
 }
 
+h1 {
+    /* font-family: 'Kavivanar', cursive; */
+    font-family: 'Rock Salt', cursive;
+    font-size: 3.5vmax;
+    text-align: center;
+    /* padding-top: 30px; */
+}
+
+a {
+    text-decoration: none; 
+}
+
+.fullScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.pageSection {
+padding-top: 10vh;
+}
+
+.sectionDescription,
+.sectionTitle {
+    padding-bottom: 50px;
+}
+
+.sectionDescription {
+    font-size: 1.5vmax;
+    line-height: 2vmax;
+    text-align: center;
+}
+
+/* NAVIGATION BAR */
 
 #top-spacer,
 #nav-bar {
@@ -78,41 +120,53 @@ body {
 }
 
 #product-title {
+    /* font-family: 'Kavivanar', cursive; */
     font-family: 'Rock Salt', cursive;
     font-size: 4vmin;
+    white-space: nowrap;
 }
 
-@media (max-width: 600px) {
+#product-title a {
+    color: black;
+}
+
+@media (max-width: 1200px) {
     #product-title {
         display: none;
     }
 }
 
 #header-img {
+    min-height:33px;
     height: 6vmin;
     padding: 0 20px;
 }
 
 .nav-link {
-    border: solid 1px black;
+    border: solid 2px black;
+    /* border-radius: 10%; */
     /* Text in boxes has mystery default  2px of spacing @ bottom */
     padding: 5px 10px 3px 10px; 
+    margin: 0 5px;
 }
 
-a {
-    text-decoration: none;
-    /* line-height: 20px;  same as parent container height */
+.nav-link:last-child {
+    margin-right: 20px;
+}
+
+a.nav-link {
     color: black;
-    /* width: 100%; */
     text-align: center;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: nowrap; 
 }
 
-a:hover {
+a:hover.nav-link {
     color: yellow;
     background: black;  
 }
+
+/* SECTION 1 */
 
 #hutzlerPhoto {
     /* display: block; */
@@ -122,19 +176,91 @@ a:hover {
     padding-top: 50px;
 }
 
-h1 {
-        /* color: black;
-        font-size: 20px; */
-    padding-top: 30px;
-}
-
-.pageSection {
-    padding-top: 10vh;
-}
-
 #main-content {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
 }
+
+/* SECTION 2 - VIDEO */
+
+/* see https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ for article on responsive iframes */
+
+
+
+
+/* #anim1,
+#anim2,
+#anim3,
+#anim4,
+#anim5,
+#anim6,
+#anim7,
+#anim8 {
+    display: none;
+    animation: typewriter 1s linear 1s 1 normal forward;
+}
+
+
+/* SECTION 3 - FEATURES */
+
+ul.banana {
+    list-style-image: url('assets/images/banana_list.png');
+    
+}
+
+.banana li {
+    font-size: calc(12px + 1vmax);
+    line-height: calc(14+ 2vmax);
+}
+
+/* #featureContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+} */
+
+
+/* SECTION 4 - UPDATES */
+
+form {
+    width: 25%;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.inputContainer label {
+    padding-right: 10px;
+}
+
+#submit {
+    border: solid 2px black;
+    /* border-radius: 10%; */
+    /* Text in boxes has mystery default  2px of spacing @ bottom */
+    margin: 0 5px;
+    background-color: white;
+    font-size: 1vmax;
+}
+
+#submit:hover {
+    background: black;
+    color: white;
+}
+
+
+/* @keyframes typewriter {
+    0% {
+        display: none;
+    }
+    100% {
+        display: inline;
+    }
+} */
