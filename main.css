@@ -61,9 +61,10 @@ body {
 h1 {
     /* font-family: 'Kavivanar', cursive; */
     font-family: 'Rock Salt', cursive;
-    font-size: 3.5vmax;
+    font-size: calc( 12px + 3vmax);
     text-align: center;
-    /* padding-top: 30px; */
+    margin: 0 15px;
+    padding-top: 30px;
 }
 
 a {
@@ -76,7 +77,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: white;
 }
 
@@ -100,7 +101,7 @@ padding-top: 10vh;
 #top-spacer,
 #nav-bar {
     min-height: 10vh;
-    width: 100%;
+    width: 100vw;
 }
 
 #nav-bar {
@@ -155,18 +156,19 @@ padding-top: 10vh;
 }
 
 a.nav-link {
-    color: black;
+    background: black;
+    color: yellow;
     text-align: center;
     overflow: hidden;
     white-space: nowrap; 
 }
 
 a:hover.nav-link {
-    color: yellow;
-    background: black;  
+    color: black;
+    background: yellow;  
 }
 
-/* SECTION 1 */
+/* SECTION 1 - INTRO */
 
 #hutzlerPhoto {
     /* display: block; */
@@ -182,6 +184,10 @@ a:hover.nav-link {
     /* justify-content: center; */
     align-items: center;
 }
+
+/* #mainStatement {
+    margin: 0 15px;
+} */
 
 /* SECTION 2 - VIDEO */
 
@@ -205,22 +211,28 @@ a:hover.nav-link {
 
 /* SECTION 3 - FEATURES */
 
-ul.banana {
+/* ul.banana {
     list-style-image: url('assets/images/banana_list.png');
     
-}
+} */
 
 .banana li {
-    font-size: calc(12px + 1vmax);
-    line-height: calc(14+ 2vmax);
+    font-size: calc(12px + 2vmax);
+    line-height: calc(14 + 2.5vmax);
+    padding-bottom: 1vmax;
+    background: url("assets/images/banana_list.png") no-repeat left 10px;
+    padding-left: 1em;
 }
 
-/* #featureContainer {
-    display: flex;
+
+
+ #featureContainer {
+     margin: 0 15px;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-} */
+    width: 100%; */
+}
 
 
 /* SECTION 4 - UPDATES */
