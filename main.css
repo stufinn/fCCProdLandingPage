@@ -149,6 +149,7 @@ padding-top: 10vh;
     /* Text in boxes has mystery default  2px of spacing @ bottom */
     padding: 5px 10px 3px 10px; 
     margin: 0 5px;
+    font-size: calc(6px + 1vmax);
 }
 
 .nav-link:last-child {
@@ -167,6 +168,21 @@ a:hover.nav-link {
     color: black;
     background: yellow;  
 }
+
+#ALT-nav-links {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #nav-links {
+        display: none;
+    }
+
+    #ALT-nav-links {
+        display: block;
+    }
+}
+
 
 /* SECTION 1 - INTRO */
 
@@ -276,3 +292,48 @@ form {
         display: inline;
     }
 } */
+
+/* SECTION 5 - REVIEWS */
+
+button {
+    /* width: 5vmin;
+    height: 2vmin; */
+    font-size: 2vmax;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px 5px 10px; 
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+#reviews {
+    justify-content: space-around;
+}
+
+#reviews h3 {
+    font-size: calc(12px + 2vmax);
+    line-height: calc(14px + 2.5vmax);
+    text-align: center;
+}
+
+#quoteAttr {
+    text-align: right;
+    padding-top: 10px;
+}
+
+#reviewContainer {
+    width: 65vw;
+}
+
+#realReviews a {
+    color: black;
+}
+
+#reviews h1 {
+    padding-top: 50px;
+}
